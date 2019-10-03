@@ -2,18 +2,6 @@
 
 CInif::CInif(){}
 
-void SoundPlay()
-{
-	Cerr() <<"MUSIC!!!!!!!!!!!!!!!!!!!!!!1\n";
-	CInif CInif;
-	CInif.ParsePath("setup.ini");
-	//PathIni Pathini_ob;
-	//Pathini_ob = ParsePath("setup.ini");
-	//system ( "mpg123 /home/comis/upp/MyApps/Testsound/sound.mp3" );
-	Cerr() <<CInif.PathSound<<"\n";
-	system ( "mpg123 "<< CInif.PathSound <<"");
-}
-
 void CInif::ParsePath(String FileName){
 	//PathIni Pathini_ob;
 	
